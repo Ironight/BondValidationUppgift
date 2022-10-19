@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation2</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h1>Html based validation</h1>
+    <form>
+        <label for="user">Username:</label> 
+        <input type="text" name="user" required><br><br>
+        <label for="password">Password:</label> 
+        <input type="password" name="password" minlength="6" required><br><br>
+        <label for="password">Confirm Password:</label> 
+        <input type="password" name="passwordConfirm" minlength="6" required><br><br>
+        <label for="email">Email Adress:</label> 
+        <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required><br><br>
+        <label for="confirm">I have read and agreed to the terms of service:</label><br>
+        <input type="checkbox" name="confirm" required><br><br>
+        <input type="submit" value="send">
+    </form>
+</body>
+</html>
